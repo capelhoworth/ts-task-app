@@ -1,7 +1,15 @@
 import React from "react";
 import "./App.css";
 
-let name: string;
+interface Person {
+  name: string;
+  age?: number;
+}
+
+type X = Person & {
+  a: string;
+  b: number;
+};
 
 function App() {
   return <div className="App">Hello World!</div>;
