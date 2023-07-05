@@ -1,18 +1,12 @@
 import React from "react";
 import "./App.css";
 
-interface Person {
-  name: string;
-  age?: number;
-}
-
-type X = Person & {
-  a: string;
-  b: number;
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <span className="heading">Taskify</span>
+    </div>
+  );
 };
-
-function App() {
-  return <div className="App">Hello World!</div>;
-}
 
 export default App;
